@@ -1,0 +1,41 @@
+﻿The wine quality data came in two csv files from  P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis’ analysis: Modeling wine preferences by data mining from physicochemical properties. Both the red  and white data frames contained no missing values. There were 11 observed physicochemical properties represented by floats and a discrete categorical variable quality that uses a 1-10 scale. In the data wrangling process, I first removed the outliers that were outside two standard deviations for each of the 11 observed properties.  After removing these outliers the white dataframe had 2,935 observation and the red dataframe had 1,012 observations. After removing the outliers, I grouped the discrete categorical variable quality into three values: poor (values 1-4), good (values 5,6), and excellent(values 7-10). Below I have included the info for both dataframes:
+White:
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 2935 entries, 1 to 4895
+Data columns (total 12 columns):
+fixed acidity           2935 non-null float64
+volatile acidity        2935 non-null float64
+citric acid             2935 non-null float64
+residual sugar          2935 non-null float64
+chlorides               2935 non-null float64
+free sulfur dioxide     2935 non-null float64
+total sulfur dioxide    2935 non-null float64
+density                 2935 non-null float64
+pH                      2935 non-null float64
+sulphates               2935 non-null float64
+alcohol                 2935 non-null float64
+quality                 2935 non-null int64
+dtypes: float64(11), int64(1)
+memory usage: 298.1 KB
+None
+
+
+Red:
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 1012 entries, 0 to 1598
+Data columns (total 12 columns):
+fixed acidity           1012 non-null float64
+volatile acidity        1012 non-null float64
+citric acid             1012 non-null float64
+residual sugar          1012 non-null float64
+chlorides               1012 non-null float64
+free sulfur dioxide     1012 non-null float64
+total sulfur dioxide    1012 non-null float64
+density                 1012 non-null float64
+pH                      1012 non-null float64
+sulphates               1012 non-null float64
+alcohol                 1012 non-null float64
+quality                 1012 non-null int64
+dtypes: float64(11), int64(1)
+memory usage: 102.8 KB
+None
